@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { I18nextProvider } from 'react-i18next';
+import { ThemeProvider } from 'styled-components';
 
-import i18n from './locales/i18n';
-import App from './components/App';
+import './locales/i18n';
+import theme from './theme';
+import App from './App';
+import GlobalStyle from './components/GlobalStyle';
 
 ReactDOM.render(
-  <I18nextProvider i18n={i18n}>
+  <ThemeProvider theme={theme}>
+    <GlobalStyle />
     <App />
-  </I18nextProvider>,
+  </ThemeProvider>,
   document.getElementById('app'),
 );

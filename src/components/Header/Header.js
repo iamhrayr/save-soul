@@ -1,12 +1,11 @@
 import React from 'react';
+import { Logo } from './styled';
 
 const Header = () => {
   return (
-    <div>
-      lo
-      <span>asdas</span>
-      <span>asdas</span>
-    </div>
+    <header>
+      <Logo>SaveSoul</Logo>
+    </header>
   );
 };
 
